@@ -1,0 +1,103 @@
+import time
+
+print("Loku's Text Encryption 1.0")
+
+deor = input("Decrypt Or Encrypt?\nD/E : ")
+
+a = "^"
+b = "%"
+c = "@"
+d = "&"
+e = "*"
+f = "("
+g = "#"
+h = "/"
+i = ">"
+j = ":"
+k = "~"
+l = "|"
+m = "{"
+n = "?"
+o = "}"
+p = "*"
+q = "_"
+r = "["
+s = "`"
+t = "+"
+u = "4"
+v = "2"
+w = "-"
+x = "§"
+y = "£"
+z = "€"
+
+if deor == "e":
+    cryp = input("What Do You Want To Encrypt?\nText Only : ")
+    crypt = cryp.lower()
+    print("Encrypting")
+
+    crypted = crypt.replace("a", a)
+    crypted = crypted.replace("b", b)
+    crypted = crypted.replace("c", c)
+    crypted = crypted.replace("d", d)
+    crypted = crypted.replace("e", e)
+    crypted = crypted.replace("f", f)
+    crypted = crypted.replace("g", g)
+    crypted = crypted.replace("h", h)
+    crypted = crypted.replace("i", i)
+    crypted = crypted.replace("j", j)
+    crypted = crypted.replace("k", k)
+    crypted = crypted.replace("l", l)
+    crypted = crypted.replace("m", m)
+    crypted = crypted.replace("n", n)
+    crypted = crypted.replace("o", o)
+    crypted = crypted.replace("p", p)
+    crypted = crypted.replace("q", q)
+    crypted = crypted.replace("r", r)
+    crypted = crypted.replace("s", s)
+    crypted = crypted.replace("t", t)
+    crypted = crypted.replace("u", u)
+    crypted = crypted.replace("v", v)
+    crypted = crypted.replace("w", w)
+    crypted = crypted.replace("x", x)
+    crypted = crypted.replace("y", y)
+    crypted = crypted.replace("z", z)
+    time.sleep(1)
+    print(crypted)
+elif deor == "d":
+    decryp = input("What do you want to decrypt?\n : ")
+    decrypt = decryp.lower()
+
+    decrypted = decrypt.replace(a, "a")
+    decrypted = decrypt.replace(b, "b")
+    decrypted = decrypt.replace(b, "b")
+    decrypted = decrypt.replace(c, "c")
+    decrypted = decrypt.replace(d, "d")
+    decrypted = decrypt.replace(e, "e")
+    decrypted = decrypt.replace(f, "f")
+    decrypted = decrypt.replace(g, "g")
+    decrypted = decrypt.replace(h, "h")
+    decrypted = decrypt.replace(i, "i")
+    decrypted = decrypt.replace(j, "j")
+    decrypted = decrypt.replace(k, "k")
+    decrypted = decrypt.replace(l, "l")
+    decrypted = decrypt.replace(m, "m")
+    decrypted = decrypt.replace(n, "n")
+    decrypted = decrypt.replace(o, "o")
+    decrypted = decrypt.replace(p, "p")
+    decrypted = decrypt.replace(q, "q")
+    decrypted = decrypt.replace(r, "r")
+    decrypted = decrypt.replace(s, "s")
+    decrypted = decrypt.replace(t, "t")
+    decrypted = decrypt.replace(u, "u")
+    decrypted = decrypt.replace(v, "v")
+    decrypted = decrypt.replace(w, "w")
+    decrypted = decrypt.replace(x, "x")
+    decrypted = decrypt.replace(y, "y")
+    decrypted = decrypt.replace(z, "z")
+    time.sleep(1)
+    print(decrypted)
+else:
+    print("invalid character\n---ENDING ENCRYPTOR---")
+    time.sleep(1)
+    exit()
